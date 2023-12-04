@@ -2,7 +2,7 @@ function buypass() {
     new PaymentRequest(
         [
             {
-                supportedMethods: location.origin + "/buypass/pay/main.json",
+                supportedMethods: "https://zkayns.github.io/buypass/pay/main.json",
                 data: { url: document.querySelector("input").value },
             },
         ],
@@ -16,4 +16,3 @@ function buypass() {
 }
 
 document.querySelector("button").onclick = buypass;
-//
