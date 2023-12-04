@@ -16,3 +16,4 @@ function buypass() {
 }
 
 document.querySelector("button").onclick = buypass;
+//
